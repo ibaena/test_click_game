@@ -5,3 +5,7 @@ img {
 .pictures {
   visibility: hidden;
 }
+
+btn {
+  vertical-align: center;
+}

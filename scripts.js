@@ -1,20 +1,15 @@
-var pictures = document.getElementsByClass("pictures");
-var emailFormGroup = document.getElementById("emailFormGroup");
-var imageElements = document.getElementsByTagName('img');
+var imgElements = document.getElementsByClass("pictures");
+var startBtn = document.getElementById("startBtn");
 
-function showEmailField() {
-  emailFormGroup.setAttribute("class", "form-group");
+function showPictures () {
+  for(var i = 0; i < imgElements.length; i++) {
+    imgElements.setAttribute("visibility", "visible");
+  }
 }
 
-function hideEmailField() {
-  emailFormGroup.setAttribute("class", "hidden");
-}
+startBtn.addEventListener("click", showPictures());
 
-exampleInputName2.addEventListener("focus", showEmailField);
-exampleInputName2.addEventListener("blur", hideEmailField);
-
-for(var i = 0; i < imageElements.length; i++) {
-  imageElements[i].addEventListener("click", function() {
+for(var i = 0; i < imgElements.length; i++) {
+  imgElements[i].addEventListener("click", function() {
     alert("You clicked");
-  });  
-}
+  });
