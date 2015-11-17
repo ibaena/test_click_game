@@ -2,10 +2,6 @@ img {
   padding: 0;
 }
 
-.pictures {
+#pictures {
   visibility: hidden;
-}
-
-btn {
-  vertical-align: center;
 }
